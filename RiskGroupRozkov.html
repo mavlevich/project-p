@@ -8,6 +8,11 @@
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- JS, Popper.js, and jQuery -->
+
+    <!-- ffffffffffffffffffffffffffffffffff-->
+    <script src="RiskGroupRozkov.js"></script>
+    <!-- ffffffffffffffffffffffffffffffffff-->
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
@@ -49,7 +54,7 @@
                     <li class="list-group-item">1. Считаешь ли ты, что людям можно доверять?</li>
                     <li class="list-group-item">
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" value="proverka">
                             <label class="custom-control-label" for="customRadioInline1">ДА</label>
                         </div>
                         <div class="custom-control custom-radio custom-control-inline">
@@ -61,7 +66,7 @@
                     <li class="list-group-item">2. Думаешь ли ты, что единственный способ достичь чего-то в жизни – это заботиться, прежде всего, о себе?</li>
                     <li class="list-group-item">
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline3" name="customRadioInline3" class="custom-control-input">
+                            <input type="radio" id="customRadioInline3" name="customRadioInline3" class="custom-control-input" value="proverka">
                             <label class="custom-control-label" for="customRadioInline3">ДА</label>
                         </div>
                         <div class="custom-control custom-radio custom-control-inline">
@@ -73,7 +78,7 @@
                     <li class="list-group-item">3. Легко ли ты заводишь друзей?</li>
                     <li class="list-group-item">
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline5" name="customRadioInline5" class="custom-control-input">
+                            <input type="radio" id="customRadioInline5" name="customRadioInline5" class="custom-control-input" value="proverka">
                             <label class="custom-control-label" for="customRadioInline5">ДА</label>
                         </div>
                         <div class="custom-control custom-radio custom-control-inline">
@@ -934,7 +939,7 @@
                         </div>
                     </li>
                     
-                    <a href="#" class="btn btn-primary">Результат</a>
+                    <a class="btn btn-primary" onclick="AnswerRGR()">Результат</a>
                     <p></p>
 
                   </ul>
