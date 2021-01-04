@@ -9,13 +9,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- JS, Popper.js, and jQuery -->
 
-    <!-- ffffffffffffffffffffffffffffffffff-->
-    <script src="RiskGroupRozkov.js"></script>
-    <!-- ffffffffffffffffffffffffffffffffff-->
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #01796f;">
@@ -26,7 +23,7 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo03">
             <ul class="navbar-nav">
                 <li class="nav-item ">
-                    <a class="nav-link" href="#">Главная</a>
+                    <a class="nav-link" href="index.html">Главная</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="articles.html">Статьи</a>
@@ -51,8 +48,8 @@
             </div>
             <div class="col-12">
                 <ul class="list-group">
-                    <li class="list-group-item">1. Считаешь ли ты, что людям можно доверять?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question1">1. Считаешь ли ты, что людям можно доверять?</li>
+                    <li class="list-group-item" id="answer1">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" value="proverka">
                             <label class="custom-control-label" for="customRadioInline1">ДА</label>
@@ -63,8 +60,8 @@
                         </div>
                     </li>
                     
-                    <li class="list-group-item">2. Думаешь ли ты, что единственный способ достичь чего-то в жизни – это заботиться, прежде всего, о себе?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question2">2. Думаешь ли ты, что единственный способ достичь чего-то в жизни – это заботиться, прежде всего, о себе?</li>
+                    <li class="list-group-item" id="answer2">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline3" name="customRadioInline3" class="custom-control-input" value="proverka">
                             <label class="custom-control-label" for="customRadioInline3">ДА</label>
@@ -75,8 +72,8 @@
                         </div>
                     </li>
                     
-                    <li class="list-group-item">3. Легко ли ты заводишь друзей?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question3">3. Легко ли ты заводишь друзей?</li>
+                    <li class="list-group-item" id="answer3">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline5" name="customRadioInline5" class="custom-control-input" value="proverka">
                             <label class="custom-control-label" for="customRadioInline5">ДА</label>
@@ -87,8 +84,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">4. Трудно ли тебе говорить людям «нет»?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question4">4. Трудно ли тебе говорить людям «нет»?</li>
+                    <li class="list-group-item" id="answer4">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline7" name="customRadioInline7" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline7">ДА</label>
@@ -99,8 +96,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">5. Часто ли кто-нибудь из родителей несправедливо критикует тебя?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question5">5. Часто ли кто-нибудь из родителей несправедливо критикует тебя?</li>
+                    <li class="list-group-item" id="answer5">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline9" name="customRadioInline9" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline9">ДА</label>
@@ -111,8 +108,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">6. Бывает ли так, что твои родители возражают против друзей, с которыми ты встречаешься?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question6">6. Бывает ли так, что твои родители возражают против друзей, с которыми ты встречаешься?</li>
+                    <li class="list-group-item" id="answer6">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline11" name="customRadioInline11" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline11">ДА</label>
@@ -123,8 +120,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">7. Часто ли ты нервничаешь?</li>                    
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question7">7. Часто ли ты нервничаешь?</li>                    
+                    <li class="list-group-item" id="answer7">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline13" name="customRadioInline13" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline13">ДА</label>
@@ -135,8 +132,8 @@
                         </div>
                     </li>
                     
-                    <li class="list-group-item">8. Бывают ли у тебя беспричинные колебания настроения?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question8">8. Бывают ли у тебя беспричинные колебания настроения?</li>
+                    <li class="list-group-item" id="answer8">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline15" name="customRadioInline15" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline15">ДА</label>
@@ -147,8 +144,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">9. Являешься ли ты обычно центром внимания в компании сверстников?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question9">9. Являешься ли ты обычно центром внимания в компании сверстников?</li>
+                    <li class="list-group-item" id="answer9">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline17" name="customRadioInline17" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline17">ДА</label>
@@ -159,8 +156,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">10. Можешь ли ты быть приветливым даже с теми, кого явно не любишь?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question10">10. Можешь ли ты быть приветливым даже с теми, кого явно не любишь?</li>
+                    <li class="list-group-item" id="answer10">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline19" name="customRadioInline19" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline19">ДА</label>
@@ -171,8 +168,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">11. Ты не любишь, когда тебя критикуют?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question11">11. Ты не любишь, когда тебя критикуют?</li>
+                    <li class="list-group-item" id="answer11">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline21" name="customRadioInline21" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline21">ДА</label>
@@ -183,8 +180,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">12. Можешь ли ты быть откровенным с близкими друзьями?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question12">12. Можешь ли ты быть откровенным с близкими друзьями?</li>
+                    <li class="list-group-item" id="answer12">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline23" name="customRadioInline23" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline23">ДА</label>
@@ -195,32 +192,32 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">13. Раздражаешься ли ты иногда настолько, что начинаешь кидаться предметами?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question13">13. Раздражаешься ли ты иногда настолько, что начинаешь кидаться предметами?</li>
+                    <li class="list-group-item" id="answer13">
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline25" name="customRadioInline25" class="custom-control-input">
+                            <input type="radio" id="customRadioInline25" name="customRadioInline25" class="custom-control-input" value="aggressiveness YES">
                             <label class="custom-control-label" for="customRadioInline25">ДА</label>
                         </div>
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline26" name="customRadioInline25" class="custom-control-input">
+                            <input type="radio" id="customRadioInline26" name="customRadioInline25" class="custom-control-input" value="aggressiveness NO">
                             <label class="custom-control-label" for="customRadioInline26">НЕТ</label>
                         </div>
                     </li>
 
-                    <li class="list-group-item">14. Способен ли ты на грубые шутки?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question14">14. Способен ли ты на грубые шутки?</li>
+                    <li class="list-group-item" id="answer14">
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline27" name="customRadioInline27" class="custom-control-input">
+                            <input type="radio" id="customRadioInline27" name="customRadioInline27" class="custom-control-input" value="aggressiveness YES">
                             <label class="custom-control-label" for="customRadioInline27">ДА</label>
                         </div>
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline28" name="customRadioInline27" class="custom-control-input">
+                            <input type="radio" id="customRadioInline28" name="customRadioInline27" class="custom-control-input" value="aggressiveness NO">
                             <label class="custom-control-label" for="customRadioInline28">НЕТ</label>
                         </div>
                     </li>
 
-                    <li class="list-group-item">15. Часто ли у тебя возникает чувство, что тебя не понимают?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question15">15. Часто ли у тебя возникает чувство, что тебя не понимают?</li>
+                    <li class="list-group-item" id="answer15">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline29" name="customRadioInline29" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline29">ДА</label>
@@ -231,8 +228,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">16. Бывает ли у тебя чувство, что за твоей спиной люди говорят о тебе плохо?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question16">16. Бывает ли у тебя чувство, что за твоей спиной люди говорят о тебе плохо?</li>
+                    <li class="list-group-item" id="answer16">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline31" name="customRadioInline31" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline31">ДА</label>
@@ -243,11 +240,11 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">17. Много ли у тебя близких друзей?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question17">17. Много ли у тебя близких друзей?</li>
+                    <li class="list-group-item" id="answer17">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline33" name="customRadioInline33" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadioInline31">ДА</label>
+                            <label class="custom-control-label" for="customRadioInline33">ДА</label>
                         </div>
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline34" name="customRadioInline33" class="custom-control-input">
@@ -255,8 +252,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">18. Стесняешься ли ты обращаться к людям за помощью?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question18">18. Стесняешься ли ты обращаться к людям за помощью?</li>
+                    <li class="list-group-item" id="answer18">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline35" name="customRadioInline35" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline35">ДА</label>
@@ -267,32 +264,32 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">19. Нравится ли тебе нарушать установленные правила?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question19">19. Нравится ли тебе нарушать установленные правила?</li>
+                    <li class="list-group-item" id="answer19">
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline37" name="customRadioInline37" class="custom-control-input">
+                            <input type="radio" id="customRadioInline37" name="customRadioInline37" class="custom-control-input" value="aggressiveness YES">
                             <label class="custom-control-label" for="customRadioInline37">ДА</label>
                         </div>
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline38" name="customRadioInline37" class="custom-control-input">
+                            <input type="radio" id="customRadioInline38" name="customRadioInline37" class="custom-control-input" value="aggressiveness NO">
                             <label class="custom-control-label" for="customRadioInline38">НЕТ</label>
                         </div>
                     </li>
 
-                    <li class="list-group-item">20. Бывает ли у тебя иногда желание причинять вред другим людям?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question20">20. Бывает ли у тебя иногда желание причинять вред другим людям?</li>
+                    <li class="list-group-item" id="answer20">
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline39" name="customRadioInline39" class="custom-control-input">
+                            <input type="radio" id="customRadioInline39" name="customRadioInline39" class="custom-control-input" value="aggressiveness YES">
                             <label class="custom-control-label" for="customRadioInline39">ДА</label>
                         </div>
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline40" name="customRadioInline39" class="custom-control-input">
+                            <input type="radio" id="customRadioInline40" name="customRadioInline39" class="custom-control-input" value="aggressiveness NO">
                             <label class="custom-control-label" for="customRadioInline40">НЕТ</label>
                         </div>
                     </li>
 
-                    <li class="list-group-item">21. Раздражают ли тебя родители?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question21">21. Раздражают ли тебя родители?</li>
+                    <li class="list-group-item" id="answer21">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline41" name="customRadioInline41" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline41">ДА</label>
@@ -303,8 +300,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">22. Всегда ли дома ты обеспечен всем жизненно необходимым?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question22">22. Всегда ли дома ты обеспечен всем жизненно необходимым?</li>
+                    <li class="list-group-item" id="answer22">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline43" name="customRadioInline43" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline43">ДА</label>
@@ -315,8 +312,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">23. Ты всегда уверен в себе?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question23">23. Ты всегда уверен в себе?</li>
+                    <li class="list-group-item" id="answer23">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline45" name="customRadioInline45" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline45">ДА</label>
@@ -327,8 +324,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">24. Ты обычно вздрагиваешь при необычном звуке?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question24">24. Ты обычно вздрагиваешь при необычном звуке?</li>
+                    <li class="list-group-item" id="answer24">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline47" name="customRadioInline47" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline47">ДА</label>
@@ -339,8 +336,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">25. Кажется ли тебе, что твои родители тебя не понимают?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question25">25. Кажется ли тебе, что твои родители тебя не понимают?</li>
+                    <li class="list-group-item" id="answer25">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline49" name="customRadioInline49" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline49">ДА</label>
@@ -351,8 +348,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">26. Свои неудачи ты переживаешь сам?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question26">26. Свои неудачи ты переживаешь сам?</li>
+                    <li class="list-group-item" id="answer26">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline51" name="customRadioInline51" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline51">ДА</label>
@@ -363,8 +360,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">27. Бывает ли, что когда ты остаешься один, твое настроение улучшается?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question27">27. Бывает ли, что когда ты остаешься один, твое настроение улучшается?</li>
+                    <li class="list-group-item" id="answer27">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline53" name="customRadioInline53" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline53">ДА</label>
@@ -375,8 +372,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">28. Кажется ли тебе, что у твоих друзей более счастливая семья, чем у тебя?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question28">28. Кажется ли тебе, что у твоих друзей более счастливая семья, чем у тебя?</li>
+                    <li class="list-group-item" id="answer28">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline55" name="customRadioInline55" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline55">ДА</label>
@@ -387,8 +384,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">29. Чувствуешь ли ты себя несчастным из-за недостатка денег в семье?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question29">29. Чувствуешь ли ты себя несчастным из-за недостатка денег в семье?</li>
+                    <li class="list-group-item" id="answer29">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline57" name="customRadioInline57" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline57">ДА</label>
@@ -399,8 +396,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">30. Бывает, что ты злишься на всех?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question30">30. Бывает, что ты злишься на всех?</li>
+                    <li class="list-group-item" id="answer30">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline59" name="customRadioInline59" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline59">ДА</label>
@@ -411,8 +408,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">31. Часто ли ты чувствуешь себя беззащитным?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question31">31. Часто ли ты чувствуешь себя беззащитным?</li>
+                    <li class="list-group-item" id="answer31">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline61" name="customRadioInline61" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline61">ДА</label>
@@ -423,8 +420,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">32. Легко ли ты осваиваешься в новом коллективе?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question32">32. Легко ли ты осваиваешься в новом коллективе?</li>
+                    <li class="list-group-item" id="answer32">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline63" name="customRadioInline63" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline63">ДА</label>
@@ -435,8 +432,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">33. Трудно ли тебе отвечать в школе перед всем классом?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question33">33. Трудно ли тебе отвечать в школе перед всем классом?</li>
+                    <li class="list-group-item" id="answer33">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline65" name="customRadioInline65" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline65">ДА</label>
@@ -447,8 +444,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">34. Есть ли у тебя знакомые, которых ты вообще не можешь переносить?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question34">34. Есть ли у тебя знакомые, которых ты вообще не можешь переносить?</li>
+                    <li class="list-group-item" id="answer34">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline67" name="customRadioInline67" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline67">ДА</label>
@@ -459,32 +456,32 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">35. Можешь ли ты ударить человека?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question35">35. Можешь ли ты ударить человека?</li>
+                    <li class="list-group-item" id="answer35">
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline69" name="customRadioInline69" class="custom-control-input">
+                            <input type="radio" id="customRadioInline69" name="customRadioInline69" class="custom-control-input" value="aggressiveness YES">
                             <label class="custom-control-label" for="customRadioInline69">ДА</label>
                         </div>
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline70" name="customRadioInline69" class="custom-control-input">
+                            <input type="radio" id="customRadioInline70" name="customRadioInline69" class="custom-control-input" value="aggressiveness NO">
                             <label class="custom-control-label" for="customRadioInline70">НЕТ</label>
                         </div>
                     </li>
 
-                    <li class="list-group-item">36. Ты иногда угрожаешь людям?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question36">36. Ты иногда угрожаешь людям?</li>
+                    <li class="list-group-item" id="answer36">
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline71" name="customRadioInline71" class="custom-control-input">
+                            <input type="radio" id="customRadioInline71" name="customRadioInline71" class="custom-control-input" value="aggressiveness YES">
                             <label class="custom-control-label" for="customRadioInline71">ДА</label>
                         </div>
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline72" name="customRadioInline71" class="custom-control-input">
+                            <input type="radio" id="customRadioInline72" name="customRadioInline71" class="custom-control-input" value="aggressiveness NO">
                             <label class="custom-control-label" for="customRadioInline72">НЕТ</label>
                         </div>
                     </li>
 
-                    <li class="list-group-item">37. Часто ли родители наказывали тебя?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question37">37. Часто ли родители наказывали тебя?</li>
+                    <li class="list-group-item" id="answer37">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline73" name="customRadioInline73" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline73">ДА</label>
@@ -495,8 +492,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">38. Появилось ли у тебя когда-нибудь сильное желание убежать из дома?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question38">38. Появилось ли у тебя когда-нибудь сильное желание убежать из дома?</li>
+                    <li class="list-group-item" id="answer38">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline75" name="customRadioInline75" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline75">ДА</label>
@@ -507,8 +504,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">39. Думаешь ли ты, что твои родители часто обходятся с тобой как с ребенком?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question39">39. Думаешь ли ты, что твои родители часто обходятся с тобой как с ребенком?</li>
+                    <li class="list-group-item" id="answer39">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline77" name="customRadioInline77" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline77">ДА</label>
@@ -519,8 +516,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">40. Часто ли ты чувствуешь себя несчастным?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question40">40. Часто ли ты чувствуешь себя несчастным?</li>
+                    <li class="list-group-item" id="answer40">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline79" name="customRadioInline79" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline79">ДА</label>
@@ -531,8 +528,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">41. Легко ли ты можешь рассердиться?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question41">41. Легко ли ты можешь рассердиться?</li>
+                    <li class="list-group-item" id="answer41">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline81" name="customRadioInline81" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline81">ДА</label>
@@ -543,20 +540,20 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">42. Рискнул бы ты схватить за уздечку бегущую лошадь?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question42">42. Рискнул бы ты схватить за уздечку бегущую лошадь?</li>
+                    <li class="list-group-item" id="answer42">
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline83" name="customRadioInline83" class="custom-control-input">
+                            <input type="radio" id="customRadioInline83" name="customRadioInline83" class="custom-control-input" value="aggressiveness YES">
                             <label class="custom-control-label" for="customRadioInline83">ДА</label>
                         </div>
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline84" name="customRadioInline83" class="custom-control-input">
+                            <input type="radio" id="customRadioInline84" name="customRadioInline83" class="custom-control-input" value="aggressiveness NO">
                             <label class="custom-control-label" for="customRadioInline84">НЕТ</label>
                         </div>
                     </li>
 
-                    <li class="list-group-item">43. Считаешь ли ты, что есть много глупых моральных норм поведения?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question43">43. Считаешь ли ты, что есть много глупых моральных норм поведения?</li>
+                    <li class="list-group-item" id="answer43">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline85" name="customRadioInline85" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline85">ДА</label>
@@ -567,8 +564,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">44. Страдаешь ли ты от робости и застенчивости?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question44">44. Страдаешь ли ты от робости и застенчивости?</li>
+                    <li class="list-group-item" id="answer44">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline87" name="customRadioInline87" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline87">ДА</label>
@@ -579,8 +576,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">45. Испытывал ли ты чувство, что тебя недостаточно любят в семье?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question45">45. Испытывал ли ты чувство, что тебя недостаточно любят в семье?</li>
+                    <li class="list-group-item" id="answer45">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline89" name="customRadioInline89" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline89">ДА</label>
@@ -591,8 +588,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">46. Твои родители живут отдельно от тебя?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question46">46. Твои родители живут отдельно от тебя?</li>
+                    <li class="list-group-item" id="answer46">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline91" name="customRadioInline91" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline91">ДА</label>
@@ -603,8 +600,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">47. Часто ли ты теряешь уверенность в себе из-за внешнего вида?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question47">47. Часто ли ты теряешь уверенность в себе из-за внешнего вида?</li>
+                    <li class="list-group-item" id="answer47">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline93" name="customRadioInline93" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline93">ДА</label>
@@ -615,8 +612,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">48. Часто ли у тебя бывает веселое и беззаботное настроение?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question48">48. Часто ли у тебя бывает веселое и беззаботное настроение?</li>
+                    <li class="list-group-item" id="answer48">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline95" name="customRadioInline95" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline95">ДА</label>
@@ -627,8 +624,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">49. Ты подвижный человек?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question49">49. Ты подвижный человек?</li>
+                    <li class="list-group-item" id="answer49">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline97" name="customRadioInline97" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline97">ДА</label>
@@ -639,8 +636,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">50. Любят ли тебя твои знакомые, друзья?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question50">50. Любят ли тебя твои знакомые, друзья?</li>
+                    <li class="list-group-item" id="answer50">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline99" name="customRadioInline99" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline99">ДА</label>
@@ -651,8 +648,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">51. Бывает ли, что твои родители тебя не понимают и кажутся тебе чужими?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question51">51. Бывает ли, что твои родители тебя не понимают и кажутся тебе чужими?</li>
+                    <li class="list-group-item" id="answer51">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline101" name="customRadioInline101" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline101">ДА</label>
@@ -663,8 +660,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">52. При неудачах бывает ли у тебя желание убежать куда-нибудь подальше и не возвращаться?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question52">52. При неудачах бывает ли у тебя желание убежать куда-нибудь подальше и не возвращаться?</li>
+                    <li class="list-group-item" id="answer52">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline103" name="customRadioInline103" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline103">ДА</label>
@@ -675,8 +672,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">53. Бывало ли, что кто-то из родителей вызывал у тебя чувство страха?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question53">53. Бывало ли, что кто-то из родителей вызывал у тебя чувство страха?</li>
+                    <li class="list-group-item" id="answer53">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline105" name="customRadioInline105" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline105">ДА</label>
@@ -687,8 +684,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">54. Критикуют ли родители твой внешний вид?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question54">54. Критикуют ли родители твой внешний вид?</li>
+                    <li class="list-group-item" id="answer54">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline107" name="customRadioInline107" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline107">ДА</label>
@@ -699,8 +696,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">55. Завидуешь ли ты иногда счастью других?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question55">55. Завидуешь ли ты иногда счастью других?</li>
+                    <li class="list-group-item" id="answer55">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline109" name="customRadioInline109" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline109">ДА</label>
@@ -711,8 +708,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">56. Часто ли ты чувствуешь себя одиноким, даже находясь среди людей?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question56">56. Часто ли ты чувствуешь себя одиноким, даже находясь среди людей?</li>
+                    <li class="list-group-item" id="answer56">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline111" name="customRadioInline111" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline111">ДА</label>
@@ -723,32 +720,32 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">57. Есть ли люди, которых ты ненавидишь по-настоящему ?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question57">57. Есть ли люди, которых ты ненавидишь по-настоящему ?</li>
+                    <li class="list-group-item" id="answer57">
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline113" name="customRadioInline113" class="custom-control-input">
+                            <input type="radio" id="customRadioInline113" name="customRadioInline113" class="custom-control-input" value="aggressiveness YES">
                             <label class="custom-control-label" for="customRadioInline113">ДА</label>
                         </div>
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline114" name="customRadioInline113" class="custom-control-input">
+                            <input type="radio" id="customRadioInline114" name="customRadioInline113" class="custom-control-input" value="aggressiveness NO">
                             <label class="custom-control-label" for="customRadioInline114">НЕТ</label>
                         </div>
                     </li>
 
-                    <li class="list-group-item">58. Часто ли ты дерешься?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question58">58. Часто ли ты дерешься?</li>
+                    <li class="list-group-item" id="answer58">
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline115" name="customRadioInline115" class="custom-control-input">
+                            <input type="radio" id="customRadioInline115" name="customRadioInline115" class="custom-control-input" value="aggressiveness YES">
                             <label class="custom-control-label" for="customRadioInline115">ДА</label>
                         </div>
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline116" name="customRadioInline115" class="custom-control-input">
+                            <input type="radio" id="customRadioInline116" name="customRadioInline115" class="custom-control-input" value="aggressiveness NO">
                             <label class="custom-control-label" for="customRadioInline116">НЕТ</label>
                         </div>
                     </li>
 
-                    <li class="list-group-item">59. Легко ли ты просишь помощи у другого человека?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question59">59. Легко ли ты просишь помощи у другого человека?</li>
+                    <li class="list-group-item" id="answer59">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline117" name="customRadioInline117" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline117">ДА</label>
@@ -759,8 +756,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">60. Легко ли тебе усидеть на месте?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question60">60. Легко ли тебе усидеть на месте?</li>
+                    <li class="list-group-item" id="answer60">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline119" name="customRadioInline119" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline119">ДА</label>
@@ -771,8 +768,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">61. Ты охотно отвечаешь у доски в школе?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question61">61. Ты охотно отвечаешь у доски в школе?</li>
+                    <li class="list-group-item" id="answer61">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline121" name="customRadioInline121" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline121">ДА</label>
@@ -783,8 +780,8 @@
                         </div>
                     </li>
                     
-                    <li class="list-group-item">62. Бывает ли, что ты так расстроен, что долго не можешь уснуть?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question62">62. Бывает ли, что ты так расстроен, что долго не можешь уснуть?</li>
+                    <li class="list-group-item" id="answer62">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline123" name="customRadioInline123" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline123">ДА</label>
@@ -795,8 +792,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">63. Часто ли ты обнаруживал, что твой приятель тебя обманул?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question63">63. Часто ли ты обнаруживал, что твой приятель тебя обманул?</li>
+                    <li class="list-group-item" id="answer63">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline125" name="customRadioInline125" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline125">ДА</label>
@@ -807,32 +804,32 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">64. Часто ли ты ругаешься?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question64">64. Часто ли ты ругаешься?</li>
+                    <li class="list-group-item" id="answer64">
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline127" name="customRadioInline127" class="custom-control-input">
+                            <input type="radio" id="customRadioInline127" name="customRadioInline127" class="custom-control-input" value="aggressiveness YES">
                             <label class="custom-control-label" for="customRadioInline127">ДА</label>
                         </div>
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline128" name="customRadioInline127" class="custom-control-input">
+                            <input type="radio" id="customRadioInline128" name="customRadioInline127" class="custom-control-input" value="aggressiveness NO">
                             <label class="custom-control-label" for="customRadioInline128">НЕТ</label>
                         </div>
                     </li>
 
-                    <li class="list-group-item">65. Мог бы ты без тренировки управлять парусной лодкой?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question65">65. Мог бы ты без тренировки управлять парусной лодкой?</li>
+                    <li class="list-group-item" id="answer65">
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline129" name="customRadioInline129" class="custom-control-input">
+                            <input type="radio" id="customRadioInline129" name="customRadioInline129" class="custom-control-input" value="aggressiveness YES">
                             <label class="custom-control-label" for="customRadioInline129">ДА</label>
                         </div>
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline130" name="customRadioInline129" class="custom-control-input">
+                            <input type="radio" id="customRadioInline130" name="customRadioInline129" class="custom-control-input" value="aggressiveness NO">
                             <label class="custom-control-label" for="customRadioInline130">НЕТ</label>
                         </div>
                     </li>
 
-                    <li class="list-group-item">66. Часто ли в вашей семье бывают ссоры?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question66">66. Часто ли в вашей семье бывают ссоры?</li>
+                    <li class="list-group-item" id="answer66">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline131" name="customRadioInline131" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline131">ДА</label>
@@ -843,8 +840,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">67. Является ли один из твоих родителей очень нервным?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question67">67. Является ли один из твоих родителей очень нервным?</li>
+                    <li class="list-group-item" id="answer67">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline133" name="customRadioInline133" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline133">ДА</label>
@@ -855,8 +852,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">68. Часто ли ты чувствуешь себя ничтожным?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question68">68. Часто ли ты чувствуешь себя ничтожным?</li>
+                    <li class="list-group-item" id="answer68">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline135" name="customRadioInline135" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline135">ДА</label>
@@ -867,8 +864,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">69. Беспокоит ли тебя ощущение, что люди могут угадать твои мысли?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question69">69. Беспокоит ли тебя ощущение, что люди могут угадать твои мысли?</li>
+                    <li class="list-group-item" id="answer69">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline137" name="customRadioInline137" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline137">ДА</label>
@@ -879,8 +876,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">70. Ты всегда делаешь все по-своему?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question70">70. Ты всегда делаешь все по-своему?</li>
+                    <li class="list-group-item" id="answer70">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline139" name="customRadioInline139" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline139">ДА</label>
@@ -891,8 +888,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">71. Бывают ли твои родители чересчур строги к тебе?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question71">71. Бывают ли твои родители чересчур строги к тебе?</li>
+                    <li class="list-group-item" id="answer71">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline141" name="customRadioInline141" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline141">ДА</label>
@@ -903,8 +900,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">72. Стесняешься ли ты в обществе малознакомых людей?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question72">72. Стесняешься ли ты в обществе малознакомых людей?</li>
+                    <li class="list-group-item" id="answer72">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline143" name="customRadioInline143" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline143">ДА</label>
@@ -915,8 +912,8 @@
                         </div>
                     </li>
 
-                    <li class="list-group-item">73. Часто ли тебе кажется, что ты чем-то хуже других?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question73">73. Часто ли тебе кажется, что ты чем-то хуже других?</li>
+                    <li class="list-group-item" id="answer73">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline145" name="customRadioInline145" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline145">ДА</label>
@@ -927,8 +924,8 @@
                         </div>
                     </li>
                     
-                    <li class="list-group-item">74. Легко ли тебе удается поднять настроение друзей?</li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" id="question74">74. Легко ли тебе удается поднять настроение друзей?</li>
+                    <li class="list-group-item" id="answer74">
                         <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline147" name="customRadioInline147" class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline147">ДА</label>
@@ -938,8 +935,7 @@
                             <label class="custom-control-label" for="customRadioInline148">НЕТ</label>
                         </div>
                     </li>
-                    
-                    <a class="btn btn-primary" onclick="AnswerRGR()">Результат</a>
+                    <a class="btn btn-primary" id = "buttonResult" onclick="yourAnswer()">Результат</a>
                     <p></p>
 
                   </ul>
@@ -949,12 +945,31 @@
     <div class="col-0">
         <!-- костыль для горизонтального центрирования-->
     </div>
+
+    <!-- Вывод/видимость результатов-->
+    <div class="container" >
+        <div class="row">
+            <div class="col-1">                
+            </div>
+            <div class="col-10" id='innerResult'>
+                
+            </div>
+            <div class="col-1">
+
+            </div>
+        </div>
+    </div>                
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
     </script>
+    <script src="RozkovGroupRisk2.js"></script>
 </body>
 
 </html>
